@@ -1,0 +1,15 @@
+.Result-winner{
+    color:green;
+    font-size:xx-large;
+    font-weight: bolder;
+}
+.Result-loser{
+    color:red;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.Result{
+    text-align: center;
+    margin:1em;
+}

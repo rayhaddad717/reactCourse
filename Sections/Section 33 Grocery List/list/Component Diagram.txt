@@ -1,0 +1,30 @@
+groceryListItem:
+	props:
+	- itemName
+	- isChecked
+	- onClick() (toggleChecked)
+
+groceryListForm:
+	state:
+	-newGroceryItem
+	props:
+	-addItem()
+
+groceryList:
+	props:
+	- items {itemName,isChecked}
+	-addItem()
+	
+	component:
+	- GroceryListItem
+	- GroceryListForm	
+		props:
+		- onSubmit()
+
+groceryListApp:
+	state:
+	- items{itemName, isChecked}
+	
+	methods:
+	- onGroceryFormSubmit()
+	- write/read ToLocalStorage()

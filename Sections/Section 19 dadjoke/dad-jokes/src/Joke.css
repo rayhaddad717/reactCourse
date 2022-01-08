@@ -1,0 +1,109 @@
+.joke{
+    display:flex;
+    border-bottom:1px solid #B0BDC5;
+    padding:1em 3em 1em 0.5em;
+    align-items: center;
+    /* justify-content: space-between; */
+    position:relative;
+}
+.joke i{
+    color:#B0BDC5;
+    font-size: 1.25em;
+    transition: all 0.3s ease-in;
+}
+.joke i:hover{
+    cursor: pointer;
+    color:black;
+}
+
+.joke i:hover:nth-of-type(2n){
+    animation: arrow-translate-up 0.5s linear;}
+    .joke i:hover:nth-of-type(2n+1){
+animation: arrow-translate-down 0.5s linear;}
+@keyframes arrow-translate-up {
+    from{
+        transform:translateY(0px);
+    }
+    25%{transform:translateY(5px);}
+    50%{transform:translateY(1px);}
+    75%{transform:translateY(2px);}
+    to{transform:translateY(0px);}
+
+}
+@keyframes arrow-translate-down {
+    from{
+        transform:translateY(0px);
+    }
+    25%{transform:translateY(-5px);}
+    50%{transform:translateY(-1px);}
+    75%{transform:translateY(-2px);}
+    to{transform:translateY(0px);}
+
+}
+
+.joke-joke{
+    color:#788F9C;
+    flex-shrink: 2;
+    text-align: left;
+    margin-right:1em;
+}
+.joke-score-container{
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width:90px;
+    height:25px;
+    flex-shrink:0;
+    padding:1em;
+
+
+}
+
+.joke-score-circle{
+    color:#788F9C;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    padding:2px;
+    width:35px;
+    height:35px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.5s ease-in-out;
+    -webkit-box-shadow: 0px 8px 28px -10px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 8px 28px -10px rgba(0,0,0,1);
+    box-shadow: 0px 8px 28px -10px rgba(0,0,0,1);
+}
+@media(max-width:800px){
+    .joke-score-container{width:30%;
+        height:20%;
+        margin-right:5px;
+    padding:1em 0;}
+        .joke-score-circle{
+            box-sizing: border-box;
+            padding:0.5em;
+            width:2.25em;
+            height:2.25em;
+        }
+}
+.joke-emoji{
+    justify-self: flex-end;
+    font-size:2.5em;
+    flex-shrink:0;
+    position:absolute;
+    right:1px;
+    border-radius: 50%;
+    text-shadow:0px 6px 5px #B0BDC5;
+}
+
+.joke-emoji:hover{
+animation:emoji-rotate 1s linear infinite;
+}
+@keyframes emoji-rotate {
+    from{transform:rotate(0deg)}
+    25%{transform:rotate(30deg)}
+    50%{transform:rotate(0deg)}
+    75%{transform:rotate(-30deg)}
+    to{transform:rotate(0deg)}
+}

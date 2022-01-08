@@ -1,0 +1,16 @@
+.GuessedLetters{
+    width:300px;
+    aspect-ratio: 1;
+    background-image:url('https://e7.pngegg.com/pngimages/427/127/png-clipart-rectangular-green-board-blackboard-green-graphic-design-text-frame-cartoon-school-boards-cartoon-character-angle.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    color:white;
+    font-size: 3em;
+    line-height: 1em;
+    padding:1em;
+    letter-spacing: 0.5em;
+    word-wrap:break-word;
+    display: inline-block;
+    margin-left: 5em;
+}

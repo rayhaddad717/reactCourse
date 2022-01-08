@@ -1,0 +1,7 @@
+.coinFlipper{
+    display:inline-flex;
+    flex-direction: column;
+}
+.coinFlipper span:hover{
+    cursor: pointer;
+}

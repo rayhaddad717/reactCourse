@@ -1,0 +1,32 @@
+.todoForm{
+    align-self:center;
+    margin: 1em 0.5em;
+}
+.todoForm label{
+    display:block;
+}
+.todoForm input{
+    padding:1em;
+}
+.todoForm .submitButton{
+    background-color: rgba(255, 0, 0, 0.456);
+    padding:1em;
+    color:white;
+    border: 2px solid rgb(252, 117, 117);
+}
+
+.todoForm .submitButton:hover{
+    cursor:pointer;
+}
+
+@media (max-width:800px){
+    .todoForm{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .todoForm .form-inner-container{
+        display:flex;
+        flex-direction: rows;
+    }
+}

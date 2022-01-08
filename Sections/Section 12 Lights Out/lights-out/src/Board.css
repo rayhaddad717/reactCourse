@@ -1,0 +1,135 @@
+.Board .board-container{
+    display:flex;
+    flex-wrap: wrap;
+    width:33%;
+    aspect-ratio: 1;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5%;
+    box-shadow: -9px 0px 35px 2px rgb(214, 70, 240) ,9px 4px 35px 2px rgb(135, 203, 235);
+    overflow: hidden;
+    margin-bottom:2em;
+}
+.Board{
+    margin-top:2em;
+}
+.board-container{
+    margin-top: 0.5em;
+}
+
+    @font-face {
+        font-family: "Neon";
+        src: url('NEON____.TTF')  format("truetype");
+      }
+
+ .neon-blue{
+    font-family: 'Neon';
+          color:blue;
+          font-size:4rem;
+          animation: neonAnimation 1000ms ease-in-out 500ms infinite;
+
+        }
+        
+         .neon-orange{
+            font-family: 'Neon';
+                  color:orange;
+                  font-size:4rem;
+                  animation: neonAnimation 3000ms ease-in-out 0ms infinite;
+        }
+@keyframes neonAnimation {
+    0%{
+        opacity: 100%;
+    }
+    25%{
+        opacity: 50%;
+    }
+    50%{
+        opacity: 75%;
+    }
+    75%{
+        opacity: 40%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.Board-win{
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Board .newBoard{
+    animation: newBoard 1000ms ease-in-out;
+
+}
+@media (max-width:800px){
+    .Board .board-container,.Board-win{
+        width:80%;
+        font-size:3em;
+        margin-top:1em;
+    }
+    .Board-win span{
+        display:block;
+    }
+    .game-title{
+        margin-top:2em;
+    }
+   .game-title span{
+        font-size:3em;
+    }
+}
+@keyframes newBoard {
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(0.05);
+    }
+    100%{
+        transform:scale(1);
+    }
+    
+}
+
+
+.Board-win .restartBtn{
+   margin-left:auto !important;
+   margin-right:auto !important;
+   display: block;
+}
+.Board .restartBtn,.Board-win .restartBtn, select{
+        box-sizing: border-box;
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid  #e74c3c;
+        border-radius: 0.6em;
+        color:  #e74c3c;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 20px;
+        padding: 1.2em 2.8em;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+              border-color: #3498db;
+        color: #fff;
+        box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+        transition: all 150ms ease-in-out;
+        
+        
+    }
+    #difficulty{
+        background-color: #3498db;
+    }
+    .Board .restartBtn:hover,.Board-win .restartBtn:hover {
+        box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    }
+    .Board .restartBtn:hover,.Board-win .restartBtn:hover
+    .Board .restartBtn:focus,.Board-win .restartBtn:focus {
+      color: #fff;
+      outline: 0;
+    }

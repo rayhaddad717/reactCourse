@@ -1,0 +1,43 @@
+ .Die {
+  color: white;
+  text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-size: 4em;
+}
+.Die-locked {
+  font-size: 4em;
+  opacity: 0.5;
+  text-shadow: none;
+}
+
+@media (max-width:800px){
+  .Die{
+    font-size:2.5em;
+  }
+  .Die-locked{
+    font-size:2.5em;
+  }
+}
+
+
+.Die:not(.Die-locked):hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.Die-rolling {
+  animation: spin 1s ease-out;
+}
+
+.Die-rolling:hover,
+.Die[disabled]:hover {
+  cursor: not-allowed;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 

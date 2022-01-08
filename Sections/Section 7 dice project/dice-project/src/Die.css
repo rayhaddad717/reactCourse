@@ -1,0 +1,9 @@
+.Die i{
+   color:purple;
+}
+.Die{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin:0 1em;
+}

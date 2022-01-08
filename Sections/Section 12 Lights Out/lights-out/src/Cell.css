@@ -1,0 +1,22 @@
+.Cell{
+    flex-grow: 1;
+    border:2px solid black;
+    transition: background-color 500ms ease-in-out;
+}
+
+.Cell-lit{
+    background-color: #5C95FF;
+}
+.Cell-off{
+    background-color: #26282B;
+}
+
+body{
+    background-color: #26282B;
+}
+@media (min-width:800px){
+    .Cell:hover{
+        background-color: rgba(92, 149, 255,0.2);
+        cursor: pointer;
+    }
+}

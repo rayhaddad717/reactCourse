@@ -1,0 +1,7 @@
+.coin img{
+    aspect-ratio:1;
+    width:100px;
+}
+.coin{
+    margin: 1.25em 0;
+}

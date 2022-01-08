@@ -1,0 +1,53 @@
+.todo .taskIcon{
+    height:10px;
+    width:10px;
+    border:2px solid black;
+    border-radius: 50%;
+    background-color:transparent;
+    transition: background-color 500ms ease-in;
+    display:block;
+}
+
+.todo .taskIcon:hover{
+    cursor:pointer;
+}
+.todo .taskIcon.completed{
+    background-color:black;
+}
+
+.todo .task.completed{
+    text-decoration:line-through;
+    color:lightgray;
+}
+.todo{
+    display:flex;
+    justify-content: space-between;
+    margin: 0.25em 0;
+    background:rgba(255,255,255,0.1);
+    padding:1em;
+}
+
+.todo .taskIcons{
+    align-self: flex-end;
+    margin-right:1em;
+}
+.todo .taskIcons:hover{
+    cursor: pointer;
+}
+.todo i{
+    margin-left:1em;
+}
+.todo form{
+    margin: 0 auto;
+}
+.todo .task{
+    text-align: start;
+    flex-grow:1;
+    margin-left:0.5em;
+}
+
+@media (max-width:700px){
+    .todo .taskIcons{
+        margin:0;
+    }
+}

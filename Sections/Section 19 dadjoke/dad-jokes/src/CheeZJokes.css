@@ -1,0 +1,11 @@
+.CheeZJokes{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 1em 5em;
+    
+}
+@media(max-width:800px){
+    .CheeZJokes{flex-direction: column;
+    margin:0;
+}}

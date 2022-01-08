@@ -1,0 +1,12 @@
+.Pokedex{
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+    margin-left:30%;
+    }
+
+@media(max-width:800px){
+    .Pokedex{
+        margin-left:2%;
+    }
+}

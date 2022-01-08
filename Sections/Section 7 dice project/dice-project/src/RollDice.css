@@ -1,0 +1,47 @@
+.RollDice {
+ text-align: center;   
+}
+.RollDice-rolling{
+    animation:rotateDie 1000ms;
+}
+@keyframes rotateDie {
+    from{
+        transform:translateX(0);
+    }
+    10%{
+        transform: translateX(-10px);
+        
+    }
+    20%{
+        transform: translateX(19px);
+    }
+    30%{
+        transform: translateX(-17px);
+
+    }
+    40%{
+        transform: translateX(13px);
+        
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    to{
+        transform:translateX(0);
+
+    }
+}
+.RollDice-button{
+    text-align: center;
+    margin-top: 1em;
+    width:15em;
+    height:4em;
+    color:white;
+    background-color: black;
+    border:1px solid black;
+    border-radius: 10px;
+}
+.RollDice-button:hover{
+    cursor: pointer;
+    background-color: royalblue;
+}

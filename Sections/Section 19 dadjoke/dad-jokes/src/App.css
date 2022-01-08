@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+html {
+     background: linear-gradient(140deg, #B3E5FC 50%, #F06292 50%);
+     background-repeat: no-repeat;
+     background-size:cover;
+     height:100%;
+     /* min-height:100vh; */
+    }
+    
+    @media(min-width:600px){
+      html{
+    background: linear-gradient(90deg, #B3E5FC 50%, #F06292 50%);
+  }
+}
+@media(min-width:1000px){
+  html{
+    background: linear-gradient(140deg, #B3E5FC 50%, #F06292 50%);
+  }
+}
